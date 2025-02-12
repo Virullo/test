@@ -1,0 +1,103 @@
+.center {text-align: center;}
+
+
+.rainbow-text1 {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 40px;
+            font-weight: bold;
+
+}      
+
+.rainbow-text {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 80px;
+            font-weight: bold;
+
+}      
+
+.bl {
+    display: block;
+}
+
+.inl {
+    display: inline;
+}
+
+input.submit {
+    background-color: skyblue;
+    color: yellow;
+}
+
+marquee {
+    color: yellow;
+    font-weight: bold;
+
+}
+
+p.order {
+    font-size: 20px;
+    margin: 10px;
+}
+p.biggerfont {
+    font-size: 18px;
+}
+header {
+
+    background-image: url('quyvadu.jpg');
+
+    color: whitesmoke;
+
+    text-align: center;
+
+    padding: 10px;
+
+    font-size: 30px;
+}
+
+footer {
+
+    background-color: #000;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 10px;
+
+}
+
+.goc-binh-luan {
+
+    background-color: whitesmoke;
+
+    padding: 10px;
+
+    border: 1px solid grey;
+    margin: 10px;
+
+}
+
+.content {
+    width: 100%;
+    padding: 25px; 
+    background: white;
+    border: 1px solid grey;
+
+}
+
+.content-noborder {
+    width: 100%;
+    padding: 25px; 
+    background: white;
+    
+
+}
+
+.container {
+    display: flex;
+    margin: 10px;
+
