@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Báo tường điện tử - Lớp 12B1</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+         .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup" id="adPopup">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <img src="qh.gif">
+        <!-- Nội dung quảng cáo -->
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById('adPopup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('adPopup').style.display = 'none';
+        }
+
+        function randomPopup() {
+            showPopup();
+            setTimeout(closePopup, 16000); // tự động đóng sau 5 giây
+        }
+
+        // Hiển thị popup quảng cáo mỗi 10 giây
+        setInterval(randomPopup, 20000);
+    </script>
+    <header>
+
+
+        <h1 class="rainbow-text">Báo tường điện tử </h1>   
+
+
+        <h2>Lớp 12B1</h2>
+
+        <marquee scrollamount="15"> Nguyễn Văn Hào - Phạm Tăng Qúy - Hồ Khả Chí Đạt- Nguyễn Công Đạt - Đoàn Hoàng Trọng Vinh </marquee>
+
+
+    </header>
+
+    <main>
+
+        <div>
+
+            <h2 class="rainbow-text1 order inl" >Giới thiệu</h2>
+
+            <img src="genshin.gif" height="30">
+
+            <p class="order">
+
+                Chào mừng mọi người đến với trang báo tường của lớp 12B1, ở đây các bạn sẽ được khám phá những nội dung kì thú như âm nhạc, video, tranh ảnh, ... Bất kể nội dung nào cũng có thể xuất hiện miễn là các bạn vẫn còn theo dõi!!!. Những thứ độc quyền chỉ có tại 12B1 !!! </p><br>
+            <p class="order">    Chúc mọi người sẽ có một khoảng thời gian khám phá thật vui vẻ 😀.
+
+            </p>
+
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <h2 class="rainbow-text1">Bài viết</h2>
+
+                <ul>
+
+                    <li>
+
+                        <a href="https://spiderum.com/bai-dang/Kiet-tac-trong-Am-Nhac-yrBMNfjHLEVs" title="Bài này rất hay">Kiệt tác trong âm nhạc</a>
+
+                        <p class="biggerfont"> Thế nào là một kiệt tác nhỉ? Và nếu đến với âm nhạc, nó sẽ như thế nào?</p>
+
+                    </li>
+
+                    <li>
+
+                        <a href="https://spiderum.com/bai-dang/YEU-BAN-THAN-10qz">Bên trong chúng ta rộng lớn hơn ta tưởng</a>
+
+                        <p class="biggerfont">Thực ra, người luôn luôn ở bên bạn nhất chính là bản thân các bạn.</p>
+                        <p class="biggerfont">Người ta bảo hãy ưu tiên người ưu tiên bạn, vì vậy cũng đừng quên chính bản thân mình nhé! </p>
+
+                    </li>
+
+                    <li>  <p class="biggerfont"> Nơi mà chúng mình hay thả những dòng văn thơ nè: <a href="spiderum.com" title="trang này hay lắm nha" style="color: green"> Spiderum </a> </p> </li>
+
+                </ul>
+            </div>
+            <div class="content">
+                <iframe src="https://thpt-vxuan.thuathienhue.edu.vn/" width="1000" height="400"> </iframe>
+            </div> 
+        </div>
+
+        <div class="container">
+
+            <div class="content">
+
+                <h2 class="rainbow-text1">Góc ảnh</h2>
+           
+                <table border="1" class="inl" style="text-align: center;">
+                    <tr>
+                        <td> <img src="caubedangthuong.jpg" width="330" height="420"> </td>
+                        <td> <img src="sigmaboy.png"width="330" height="420"> </td>
+                        <td> <img src="5ae.gif" width="230" height="420"> </td>
+                        
+                    </tr>
+                    <tr>
+                        <td> <img src="chotmat.jpg"width="330" height="420"> </td>
+                        <td> <img src="depgai.jpg"width="330" height="420"> </td>
+                        <td> <img src="quy.png"width="230" height="420"> </td>  
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="content">
+
+                <h2 class="rainbow-text1">Góc âm nhạc, video clip</h2>
+
+                <ul>
+
+                    <li>
+
+                        <audio src="tungngayyeuem-demo.mp3" controls></audio>
+
+                        <p class="biggerfont">Demo bản cover mới hehe</p>
+
+                    </li>
+
+                    <li>
+
+                        <video src="chidat.mp4" controls width="750">Video clip 1></video>
+
+                        <p class="biggerfonts">Màn trình diễn đặc sắc nhất từng được xuất hiện tại trường Trung Học Phổ Thông Vinh Xuân</p>
+
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@dytlcmpc3jpy" title="ĐỪNG VÀO NHA KẺO BỊ NGHIỆN ĐẤY"> Kênh tíc tốc của Chí Đạt 12B1!! </a>
+                    </li> 
+
+                </ul>
+                <div class="content-noborder">
+                    <p class="rainbow-text1"> Một số đường dẫn thú vị: </p>
+                    <ul>
+                        <li> <a href="https://www.tiktok.com/@b122_25" title="Lớp học oách xà lách nhất trường">Kênh tíc tốc của lớp 12B1</a> </li> <br>
+                        <li> <a href="https://www.youtube.com/@EmChe" title="troll"> Kênh tấu hài Đấu Trường Chân Lý mà mn nên xem lúc ăn cơm! </a> </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="container">
+            <div class="content">
+
+                <h2 class="rainbow-text1">Góc bình luận</h2>
+
+                <form action="https://www.youtube.com/watch?v=IzSYlr3VI1A" method="GET">
+                    <p class="biggerfont inl"> Các bạn hãy cho chúng mình ý kiến để phát triển trang báo tường nhé! 😊</p>
+                    <label class="bl"><textarea cols="40" rows="5"></textarea></label><br>
+                    <input class="submit bl" type="submit" value="Gửi">
+                
+                </form> <br>
+                <img src="fb88.gif" width="1810" height="250"> 
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <p>Thông tin về nhóm:</p>
+
+        <ul>
+
+            <li>Tên nhóm: Nhóm 8 </li>
+
+            <li>Thành viên: Nguyễn Văn Hào - Phạm Tăng Quý - Nguyễn Công Đạt - Hồ Khả Chí Đạt - Đoàn Hoàng Trọng Vinh</li>
+
+            <li>Chức vụ:
+
+                    <p> Nguyễn Công Đạt: Lên ý tưởng và đưa ra các màu sắc phù hợp </p> 
+                    <p> Nguyễn Văn Hào: Coding và chỉnh sửa lại bố cục </p>
+                    <p> Đoàn Hoàng Trọng Vinh: Biên soạn nội dung </p>
+                    <p> Phạm Tăng Quý: Tìm hiểu một số cặp thẻ hay, lạ </p>
+                    <p> Hồ Khả Chí Đạt: Cổ vũ, linh vật, bao tiền nước, tìm hiểu những hình ảnh thú vị, cung cấp trang thiết bị, tất cả những công việc còn lại </p>
+            </li>
+
+
+        </ul>
+
+        <p>Địa chỉ email: nhom8chacchankhong8diem@gmail.com </p>
+
+        <p>Ngày cập nhật: 4/2/2025</p>
+
+        <p>Nguồn tham khảo: <a href="https://www.youtube.com/watch?v=kRt5CB3Fouc" title="bài này rất hay">Chill</a></p>
+
+    </footer>
+
+</body>
+
+</html>
